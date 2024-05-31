@@ -1,0 +1,24 @@
+<div class="grid">
+  <div class="output">
+      <div data-previous class="previous">{{ previousOperand }}</div>
+      <div data-current class="current">{{ currentOperand }}</div>
+  </div>
+  <button data-clear (click)="clear()" class="span_two">AC</button>
+  <button data-delete (click)="deleteNumber()">DEL</button>
+  <button data-operation (click)="chooseOperation('/')">/</button>
+  <button data-number (click)="appendNumber('1')">1</button>
+  <button data-number (click)="appendNumber('2')">2</button>
+  <button data-number (click)="appendNumber('3')">3</button>
+  <button data-operation (click)="chooseOperation('*')">*</button>
+  <button data-number (click)="appendNumber('4')">4</button>
+  <button data-number (click)="appendNumber('5')">5</button>
+  <button data-number (click)="appendNumber('6')">6</button>
+  <button data-operation (click)="chooseOperation('+')">+</button>
+  <button data-number (click)="appendNumber('7')">7</button>
+  <button data-number (click)="appendNumber('8')">8</button>
+  <button data-number (click)="appendNumber('9')">9</button>
+  <button data-operation (click)="chooseOperation('-')">-</button>
+  <button data-number (click)="appendNumber('.')">.</button>
+  <button data-number (click)="appendNumber('0')">0</button>
+  <button data-equal (click)="compute()" class="span_two equal">=</button>
+</div>

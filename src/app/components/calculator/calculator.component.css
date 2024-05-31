@@ -1,0 +1,113 @@
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 400px;
+  max-width: 95vw;
+}
+
+.output {
+  grid-column: span 4;
+  background-color: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+.previous,
+.current {
+  font-size: 2rem;
+  word-wrap: break-word;
+}
+
+.previous {
+  color: #888;
+}
+
+button {
+  font-size: 2rem;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+button:active {
+  background-color: #ddd;
+}
+
+.span_two {
+  grid-column: span 2;
+}
+
+.equal {
+  background-color: #00aaff;
+  color: white;
+}
+
+.equal:hover {
+  background-color: #0088cc;
+}
+
+.equal:active {
+  background-color: #0077bb;
+}
+
+[data-operation] {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+[data-operation]:hover {
+  background-color: #ec971f;
+}
+
+[data-operation]:active {
+  background-color: #d58512;
+}
+
+[data-clear] {
+  background-color: #d9534f;
+  color: white;
+}
+
+[data-clear]:hover {
+  background-color: #c9302c;
+}
+
+[data-clear]:active {
+  background-color: #ac2925;
+}
+
+[data-delete] {
+  background-color: #5bc0de;
+  color: white;
+}
+
+[data-delete]:hover {
+  background-color: #31b0d5;
+}
+
+[data-delete]:active {
+  background-color: #269abc;
+}
+
+@media(max-width:350px) {
+  .grid {
+      width: 300px;
+  }
+}
